@@ -8,8 +8,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN dotnet restore \
-    && dotnet ef database update
+RUN dotnet restore 
 
 EXPOSE 5000
 
